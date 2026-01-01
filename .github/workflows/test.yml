@@ -6,6 +6,12 @@ jobs:
   test:
     runs-on: ubuntu-24.04
     container: ros:jazzy-ros-base
+
+    strategy:
+      matrix:
+        python-version: [3.10, 3.11, 3.12]
+        cmake-version: [3.26, 3.27, 3.28] 
+
     steps:
       - uses: actions/checkout@v3
 
