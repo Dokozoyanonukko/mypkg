@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "system_msgs/msg/Response",
+      "fields": [
+        {
+          "name": "response",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "system_msgs/msg/Response",
+      "hash_string": "RIHS01_58e1fb1e902fa7903d50b5d90a3f5c6776989d56427d30302a2cbf1c92eb4eab"
+    }
+  ]
+}

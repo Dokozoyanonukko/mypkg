@@ -1,0 +1,5 @@
+[console_scripts]
+event = mypkg.event:main
+judge = mypkg.judge:main
+response = mypkg.response:main
+status = mypkg.status:main

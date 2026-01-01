@@ -1,0 +1,14 @@
+{
+  "package_name": "system_msgs",
+  "output_dir": "/home/nagi/ros2_ws/build/system_msgs/rosidl_generator_type_description/system_msgs",
+  "idl_tuples": [
+    "/home/nagi/ros2_ws/build/system_msgs/rosidl_adapter/system_msgs:msg/RmEvent.idl",
+    "/home/nagi/ros2_ws/build/system_msgs/rosidl_adapter/system_msgs:msg/RmNotioncmd.idl",
+    "/home/nagi/ros2_ws/build/system_msgs/rosidl_adapter/system_msgs:msg/RmStatus.idl",
+    "/home/nagi/ros2_ws/build/system_msgs/rosidl_adapter/system_msgs:msg/Response.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs"
+  ]
+}
