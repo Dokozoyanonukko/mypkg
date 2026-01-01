@@ -17,7 +17,11 @@ echo "=== Step 2: Running System & Simulating User Response ==="
 (sleep 22; ros2 topic pub --wait 10 -1 /medicine_response system_msgs/msg/Response "{response: 1}") > /dev/null &
 
 #タイムアウト
-timeout 35 ros2 launch mypkg medicine_rm.launch.py > /tmp/medicine_reminder.log || [ $? -eq 124 ]
+export PYTHONUNBUFFERED=1
+timeout 35 ros2 launch mypkg medicine_rm.launch.py --ros-args --log-level INFO > /tmp/medicine_reminder.log || [ $? -eq 124 ]
+
+echo "--- Captured Log Preview ---"
+head -n 20 /tmp/medicine_reminder.log
 
 # ログの書き込み完了を少し待つ
 sleep 2
