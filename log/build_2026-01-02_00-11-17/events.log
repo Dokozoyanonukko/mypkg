@@ -1,0 +1,511 @@
+[0.000000] (-) TimerEvent: {}
+[0.000232] (system_msgs) JobQueued: {'identifier': 'system_msgs', 'dependencies': OrderedDict()}
+[0.000313] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict({'system_msgs': '/home/nagi/ros2_ws/install/system_msgs'})}
+[0.001121] (system_msgs) JobStarted: {'identifier': 'system_msgs'}
+[0.017551] (system_msgs) JobProgress: {'identifier': 'system_msgs', 'progress': 'cmake'}
+[0.018698] (system_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/nagi/ros2_ws/src/system_msgs', '-DCMAKE_INSTALL_PREFIX=/home/nagi/ros2_ws/install/system_msgs'], 'cwd': '/home/nagi/ros2_ws/build/system_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nagi', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nagi/ros2_ws/install/system_msgs/lib:/home/nagi/ros2_ws/install/person_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nagi', 'OLDPWD': '/home/nagi/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/nagi/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nagi', 'NAME': 'MSI', 'WSL_INTEROP': '/run/WSL/355_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Users/Owner/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Owner/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/nagi/ros2_ws/install/system_msgs:/home/nagi/ros2_ws/install/person_msgs:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'LOCALHOST', 'PWD': '/home/nagi/ros2_ws/build/system_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages:/home/nagi/ros2_ws/build/mypkg:/home/nagi/ros2_ws/install/person_msgs/lib/python3.12/site-packages:/home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/nagi/ros2_ws/install/system_msgs:/home/nagi/ros2_ws/install/person_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.099528] (-) TimerEvent: {}
+[0.199937] (-) TimerEvent: {}
+[0.284343] (system_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.300096] (-) TimerEvent: {}
+[0.400727] (-) TimerEvent: {}
+[0.501316] (-) TimerEvent: {}
+[0.601837] (-) TimerEvent: {}
+[0.702322] (-) TimerEvent: {}
+[0.802863] (-) TimerEvent: {}
+[0.903332] (-) TimerEvent: {}
+[0.948704] (system_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.003531] (-) TimerEvent: {}
+[1.103983] (-) TimerEvent: {}
+[1.204416] (-) TimerEvent: {}
+[1.304916] (-) TimerEvent: {}
+[1.329556] (system_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.405122] (-) TimerEvent: {}
+[1.505561] (-) TimerEvent: {}
+[1.556529] (system_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.567989] (system_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.570637] (system_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.571602] (system_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.605690] (-) TimerEvent: {}
+[1.706155] (-) TimerEvent: {}
+[1.724083] (system_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.806279] (-) TimerEvent: {}
+[1.906674] (-) TimerEvent: {}
+[2.007207] (-) TimerEvent: {}
+[2.079921] (system_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.088388] (system_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.088929] (system_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.089546] (system_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.104844] (system_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.107347] (-) TimerEvent: {}
+[2.207744] (-) TimerEvent: {}
+[2.265819] (system_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.307890] (-) TimerEvent: {}
+[2.401348] (system_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.408000] (-) TimerEvent: {}
+[2.508363] (-) TimerEvent: {}
+[2.553342] (system_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.572213] (system_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.599925] (system_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.608481] (-) TimerEvent: {}
+[2.624812] (system_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.670090] (system_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[2.687298] (system_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[2.708671] (-) TimerEvent: {}
+[2.809006] (-) TimerEvent: {}
+[2.909354] (-) TimerEvent: {}
+[3.009746] (-) TimerEvent: {}
+[3.110143] (-) TimerEvent: {}
+[3.210663] (-) TimerEvent: {}
+[3.311034] (-) TimerEvent: {}
+[3.325752] (system_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[3.411216] (-) TimerEvent: {}
+[3.511680] (-) TimerEvent: {}
+[3.612174] (-) TimerEvent: {}
+[3.712527] (-) TimerEvent: {}
+[3.812857] (-) TimerEvent: {}
+[3.913166] (-) TimerEvent: {}
+[4.013471] (-) TimerEvent: {}
+[4.099215] (system_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.113689] (-) TimerEvent: {}
+[4.213985] (-) TimerEvent: {}
+[4.314446] (-) TimerEvent: {}
+[4.409437] (system_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.414547] (-) TimerEvent: {}
+[4.415154] (system_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.514834] (-) TimerEvent: {}
+[4.556358] (system_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.615015] (-) TimerEvent: {}
+[4.715378] (-) TimerEvent: {}
+[4.815763] (-) TimerEvent: {}
+[4.916098] (-) TimerEvent: {}
+[5.016444] (-) TimerEvent: {}
+[5.110669] (system_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.116603] (-) TimerEvent: {}
+[5.161663] (system_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.195579] (system_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.199196] (system_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.202660] (system_msgs) StdoutLine: {'line': b'-- Configuring done (5.1s)\n'}
+[5.216813] (-) TimerEvent: {}
+[5.252319] (system_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.263256] (system_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/nagi/ros2_ws/build/system_msgs\n'}
+[5.272939] (system_msgs) CommandEnded: {'returncode': 0}
+[5.273548] (system_msgs) JobProgress: {'identifier': 'system_msgs', 'progress': 'build'}
+[5.274326] (system_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nagi/ros2_ws/build/system_msgs', '--', '-j20', '-l20'], 'cwd': '/home/nagi/ros2_ws/build/system_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nagi', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nagi/ros2_ws/install/system_msgs/lib:/home/nagi/ros2_ws/install/person_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nagi', 'OLDPWD': '/home/nagi/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/nagi/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nagi', 'NAME': 'MSI', 'WSL_INTEROP': '/run/WSL/355_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Users/Owner/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Owner/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/nagi/ros2_ws/install/system_msgs:/home/nagi/ros2_ws/install/person_msgs:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'LOCALHOST', 'PWD': '/home/nagi/ros2_ws/build/system_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages:/home/nagi/ros2_ws/build/mypkg:/home/nagi/ros2_ws/install/person_msgs/lib/python3.12/site-packages:/home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/nagi/ros2_ws/install/system_msgs:/home/nagi/ros2_ws/install/person_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[5.317049] (-) TimerEvent: {}
+[5.322869] (system_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[5.331857] (system_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_system_msgs\n'}
+[5.417238] (-) TimerEvent: {}
+[5.517684] (-) TimerEvent: {}
+[5.525010] (system_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.525340] (system_msgs) StdoutLine: {'line': b'creating system_msgs.egg-info\n'}
+[5.540661] (system_msgs) StdoutLine: {'line': b'writing system_msgs.egg-info/PKG-INFO\n'}
+[5.541278] (system_msgs) StdoutLine: {'line': b'writing dependency_links to system_msgs.egg-info/dependency_links.txt\n'}
+[5.541576] (system_msgs) StdoutLine: {'line': b'writing top-level names to system_msgs.egg-info/top_level.txt\n'}
+[5.541659] (system_msgs) StdoutLine: {'line': b"writing manifest file 'system_msgs.egg-info/SOURCES.txt'\n"}
+[5.585450] (system_msgs) StdoutLine: {'line': b'[  1%] Built target system_msgs__rosidl_generator_type_description\n'}
+[5.588042] (system_msgs) StdoutLine: {'line': b"reading manifest file 'system_msgs.egg-info/SOURCES.txt'\n"}
+[5.588558] (system_msgs) StdoutLine: {'line': b"writing manifest file 'system_msgs.egg-info/SOURCES.txt'\n"}
+[5.597144] (system_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.606717] (system_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.617913] (-) TimerEvent: {}
+[5.619437] (system_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_system_msgs_egg\n'}
+[5.718098] (-) TimerEvent: {}
+[5.818538] (-) TimerEvent: {}
+[5.918871] (-) TimerEvent: {}
+[5.942059] (system_msgs) StdoutLine: {'line': b'[  4%] Built target system_msgs__cpp\n'}
+[6.003746] (system_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_event__description.c.o\x1b[0m\n'}
+[6.005320] (system_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_event__type_support.c.o\x1b[0m\n'}
+[6.006060] (system_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_event__functions.c.o\x1b[0m\n'}
+[6.006751] (system_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_notioncmd__description.c.o\x1b[0m\n'}
+[6.008368] (system_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_notioncmd__functions.c.o\x1b[0m\n'}
+[6.009151] (system_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_notioncmd__type_support.c.o\x1b[0m\n'}
+[6.009871] (system_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_status__functions.c.o\x1b[0m\n'}
+[6.010140] (system_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_status__description.c.o\x1b[0m\n'}
+[6.010356] (system_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_status__type_support.c.o\x1b[0m\n'}
+[6.010834] (system_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/response__type_support.c.o\x1b[0m\n'}
+[6.012146] (system_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/response__description.c.o\x1b[0m\n'}
+[6.012528] (system_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/response__functions.c.o\x1b[0m\n'}
+[6.019092] (-) TimerEvent: {}
+[6.091128] (system_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libsystem_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[6.119222] (-) TimerEvent: {}
+[6.219929] (-) TimerEvent: {}
+[6.273092] (system_msgs) StdoutLine: {'line': b'[ 25%] Built target system_msgs__rosidl_generator_c\n'}
+[6.289181] (system_msgs) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.290033] (system_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.292187] (system_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.292563] (system_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.292712] (system_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.294323] (system_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.320142] (-) TimerEvent: {}
+[6.420624] (-) TimerEvent: {}
+[6.521354] (-) TimerEvent: {}
+[6.621993] (-) TimerEvent: {}
+[6.722668] (-) TimerEvent: {}
+[6.748903] (system_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/system_msgs/msg/rm_event__type_support.cpp.o\x1b[0m\n'}
+[6.749518] (system_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/system_msgs/msg/rm_notioncmd__type_support.cpp.o\x1b[0m\n'}
+[6.750793] (system_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/system_msgs/msg/response__type_support.cpp.o\x1b[0m\n'}
+[6.755504] (system_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/system_msgs/msg/rm_status__type_support.cpp.o\x1b[0m\n'}
+[6.756228] (system_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/system_msgs/msg/rm_event__type_support.cpp.o\x1b[0m\n'}
+[6.756870] (system_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/system_msgs/msg/response__type_support.cpp.o\x1b[0m\n'}
+[6.758721] (system_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/system_msgs/msg/rm_notioncmd__type_support.cpp.o\x1b[0m\n'}
+[6.759935] (system_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/system_msgs/msg/rm_status__type_support.cpp.o\x1b[0m\n'}
+[6.819122] (system_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/system_msgs/msg/detail/rm_notioncmd__type_support.cpp.o\x1b[0m\n'}
+[6.819573] (system_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/system_msgs/msg/detail/rm_event__type_support.cpp.o\x1b[0m\n'}
+[6.823127] (-) TimerEvent: {}
+[6.827232] (system_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/system_msgs/msg/detail/rm_status__type_support.cpp.o\x1b[0m\n'}
+[6.827655] (system_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/system_msgs/msg/detail/response__type_support.cpp.o\x1b[0m\n'}
+[6.869063] (system_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/system_msgs/msg/detail/rm_event__type_support.c.o\x1b[0m\n'}
+[6.870039] (system_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/system_msgs/msg/detail/rm_status__type_support.c.o\x1b[0m\n'}
+[6.871235] (system_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/system_msgs/msg/detail/rm_notioncmd__type_support.c.o\x1b[0m\n'}
+[6.881092] (system_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/system_msgs/msg/detail/response__type_support.c.o\x1b[0m\n'}
+[6.923549] (-) TimerEvent: {}
+[6.931329] (system_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libsystem_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.017684] (system_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking C shared library libsystem_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.023886] (-) TimerEvent: {}
+[7.054074] (system_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/system_msgs/msg/detail/dds_fastrtps/rm_status__type_support.cpp.o\x1b[0m\n'}
+[7.055727] (system_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/system_msgs/msg/detail/dds_fastrtps/response__type_support.cpp.o\x1b[0m\n'}
+[7.060322] (system_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/system_msgs/msg/detail/dds_fastrtps/rm_event__type_support.cpp.o\x1b[0m\n'}
+[7.081424] (system_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/system_msgs/msg/detail/dds_fastrtps/rm_notioncmd__type_support.cpp.o\x1b[0m\n'}
+[7.098946] (system_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/system_msgs/msg/detail/rm_status__type_support_c.cpp.o\x1b[0m\n'}
+[7.103353] (system_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/system_msgs/msg/detail/rm_event__type_support_c.cpp.o\x1b[0m\n'}
+[7.106644] (system_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/system_msgs/msg/detail/rm_notioncmd__type_support_c.cpp.o\x1b[0m\n'}
+[7.111269] (system_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/system_msgs/msg/detail/response__type_support_c.cpp.o\x1b[0m\n'}
+[7.124105] (-) TimerEvent: {}
+[7.224674] (-) TimerEvent: {}
+[7.325808] (-) TimerEvent: {}
+[7.366830] (system_msgs) StdoutLine: {'line': b'[ 75%] Built target system_msgs__rosidl_typesupport_c\n'}
+[7.387184] (system_msgs) StdoutLine: {'line': b'[ 75%] Built target system_msgs__rosidl_typesupport_introspection_c\n'}
+[7.426222] (-) TimerEvent: {}
+[7.527184] (-) TimerEvent: {}
+[7.628036] (-) TimerEvent: {}
+[7.729065] (-) TimerEvent: {}
+[7.830250] (-) TimerEvent: {}
+[7.931207] (-) TimerEvent: {}
+[8.032026] (-) TimerEvent: {}
+[8.067233] (system_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libsystem_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[8.092459] (system_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libsystem_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[8.132401] (-) TimerEvent: {}
+[8.233621] (-) TimerEvent: {}
+[8.308502] (system_msgs) StdoutLine: {'line': b'[ 78%] Built target system_msgs__rosidl_typesupport_cpp\n'}
+[8.330084] (system_msgs) StdoutLine: {'line': b'[ 78%] Built target system_msgs__rosidl_typesupport_introspection_cpp\n'}
+[8.333913] (-) TimerEvent: {}
+[8.434694] (-) TimerEvent: {}
+[8.535310] (-) TimerEvent: {}
+[8.558937] (system_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libsystem_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.577843] (system_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libsystem_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.635448] (-) TimerEvent: {}
+[8.735955] (-) TimerEvent: {}
+[8.741434] (system_msgs) StdoutLine: {'line': b'[ 81%] Built target system_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[8.741620] (system_msgs) StdoutLine: {'line': b'[ 81%] Built target system_msgs__rosidl_typesupport_fastrtps_c\n'}
+[8.761244] (system_msgs) StdoutLine: {'line': b'[ 81%] Built target system_msgs\n'}
+[8.780650] (system_msgs) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[8.836188] (-) TimerEvent: {}
+[8.936557] (-) TimerEvent: {}
+[9.037032] (-) TimerEvent: {}
+[9.137624] (-) TimerEvent: {}
+[9.238002] (-) TimerEvent: {}
+[9.255898] (system_msgs) StdoutLine: {'line': b'[ 82%] Built target system_msgs__py\n'}
+[9.276844] (system_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_py.dir/rosidl_generator_py/system_msgs/msg/_rm_event_s.c.o\x1b[0m\n'}
+[9.277039] (system_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_py.dir/rosidl_generator_py/system_msgs/msg/_rm_notioncmd_s.c.o\x1b[0m\n'}
+[9.277233] (system_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_py.dir/rosidl_generator_py/system_msgs/msg/_rm_status_s.c.o\x1b[0m\n'}
+[9.277376] (system_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_py.dir/rosidl_generator_py/system_msgs/msg/_response_s.c.o\x1b[0m\n'}
+[9.338166] (-) TimerEvent: {}
+[9.426474] (system_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library libsystem_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[9.438332] (-) TimerEvent: {}
+[9.538690] (-) TimerEvent: {}
+[9.566400] (system_msgs) StdoutLine: {'line': b'[ 90%] Built target system_msgs__rosidl_generator_py\n'}
+[9.588872] (system_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/system_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/system_msgs/_system_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[9.589062] (system_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/system_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/system_msgs/_system_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[9.589124] (system_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/system_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/system_msgs/_system_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[9.638838] (-) TimerEvent: {}
+[9.692285] (system_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/system_msgs/system_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.692550] (system_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/system_msgs/system_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.693532] (system_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/system_msgs/system_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[9.738983] (-) TimerEvent: {}
+[9.766335] (system_msgs) StdoutLine: {'line': b'[100%] Built target system_msgs_s__rosidl_typesupport_introspection_c\n'}
+[9.766662] (system_msgs) StdoutLine: {'line': b'[100%] Built target system_msgs_s__rosidl_typesupport_c\n'}
+[9.767539] (system_msgs) StdoutLine: {'line': b'[100%] Built target system_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[9.779795] (system_msgs) CommandEnded: {'returncode': 0}
+[9.780637] (system_msgs) JobProgress: {'identifier': 'system_msgs', 'progress': 'install'}
+[9.789452] (system_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nagi/ros2_ws/build/system_msgs'], 'cwd': '/home/nagi/ros2_ws/build/system_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nagi', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nagi/ros2_ws/install/system_msgs/lib:/home/nagi/ros2_ws/install/person_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nagi', 'OLDPWD': '/home/nagi/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/nagi/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nagi', 'NAME': 'MSI', 'WSL_INTEROP': '/run/WSL/355_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Users/Owner/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Owner/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/nagi/ros2_ws/install/system_msgs:/home/nagi/ros2_ws/install/person_msgs:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'LOCALHOST', 'PWD': '/home/nagi/ros2_ws/build/system_msgs', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages:/home/nagi/ros2_ws/build/mypkg:/home/nagi/ros2_ws/install/person_msgs/lib/python3.12/site-packages:/home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/nagi/ros2_ws/install/system_msgs:/home/nagi/ros2_ws/install/person_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[9.797368] (system_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.798467] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/ament_index/resource_index/rosidl_interfaces/system_msgs\n'}
+[9.798951] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmEvent.json\n'}
+[9.799181] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmNotioncmd.json\n'}
+[9.799381] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmStatus.json\n'}
+[9.799583] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/Response.json\n'}
+[9.799651] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs\n'}
+[9.799761] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg\n'}
+[9.799894] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_notioncmd.h\n'}
+[9.800214] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_event.h\n'}
+[9.800439] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[9.800563] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/response.h\n'}
+[9.800686] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_status.h\n'}
+[9.800833] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail\n'}
+[9.801039] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__type_support.c\n'}
+[9.801316] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__functions.c\n'}
+[9.801488] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__description.c\n'}
+[9.801625] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__struct.h\n'}
+[9.801763] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__type_support.h\n'}
+[9.801896] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__functions.h\n'}
+[9.802031] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__type_support.c\n'}
+[9.802219] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__type_support.c\n'}
+[9.802283] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__type_support.h\n'}
+[9.802400] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__type_support.c\n'}
+[9.802535] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__struct.h\n'}
+[9.802669] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__functions.h\n'}
+[9.802802] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__struct.h\n'}
+[9.802935] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__functions.h\n'}
+[9.803067] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__type_support.h\n'}
+[9.803218] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__functions.c\n'}
+[9.803267] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__functions.c\n'}
+[9.803314] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__struct.h\n'}
+[9.803447] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__type_support.h\n'}
+[9.803581] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__functions.c\n'}
+[9.803714] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__description.c\n'}
+[9.803846] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__description.c\n'}
+[9.803979] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__description.c\n'}
+[9.804118] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__functions.h\n'}
+[9.804251] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/library_path.sh\n'}
+[9.804310] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/library_path.dsv\n'}
+[9.804360] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_generator_c.so\n'}
+[9.804489] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_generator_c.so" to ""\n'}
+[9.804746] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs\n'}
+[9.804853] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg\n'}
+[9.804991] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[9.805126] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail\n'}
+[9.805259] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__rosidl_typesupport_fastrtps_c.h\n'}
+[9.805378] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__rosidl_typesupport_fastrtps_c.h\n'}
+[9.805498] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__rosidl_typesupport_fastrtps_c.h\n'}
+[9.805632] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__rosidl_typesupport_fastrtps_c.h\n'}
+[9.805765] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[9.805898] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[9.806019] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs\n'}
+[9.806139] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg\n'}
+[9.806272] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_status.hpp\n'}
+[9.806479] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_notioncmd.hpp\n'}
+[9.806623] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/response.hpp\n'}
+[9.806759] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail\n'}
+[9.806896] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__traits.hpp\n'}
+[9.807031] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__builder.hpp\n'}
+[9.807166] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__traits.hpp\n'}
+[9.807367] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__struct.hpp\n'}
+[9.807646] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__traits.hpp\n'}
+[9.807819] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__type_support.hpp\n'}
+[9.807953] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__type_support.hpp\n'}
+[9.808053] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__type_support.hpp\n'}
+[9.808169] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__builder.hpp\n'}
+[9.808303] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__builder.hpp\n'}
+[9.808436] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__traits.hpp\n'}
+[9.808569] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__struct.hpp\n'}
+[9.808701] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__struct.hpp\n'}
+[9.808999] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__struct.hpp\n'}
+[9.809164] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__builder.hpp\n'}
+[9.809304] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__type_support.hpp\n'}
+[9.809440] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[9.809573] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_event.hpp\n'}
+[9.809707] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs\n'}
+[9.809839] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg\n'}
+[9.809975] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[9.810107] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail\n'}
+[9.810240] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.810532] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/dds_fastrtps\n'}
+[9.810601] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.810650] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.810697] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.810811] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.810943] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[9.811046] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs\n'}
+[9.811278] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg\n'}
+[9.811419] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[9.811559] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail\n'}
+[9.811698] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__type_support.c\n'}
+[9.811835] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__rosidl_typesupport_introspection_c.h\n'}
+[9.811973] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__rosidl_typesupport_introspection_c.h\n'}
+[9.812110] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__type_support.c\n'}
+[9.812295] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__type_support.c\n'}
+[9.812437] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__rosidl_typesupport_introspection_c.h\n'}
+[9.812576] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__type_support.c\n'}
+[9.812681] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__rosidl_typesupport_introspection_c.h\n'}
+[9.813072] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_introspection_c.so\n'}
+[9.813258] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[9.813408] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_c.so\n'}
+[9.813463] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_c.so" to ""\n'}
+[9.813516] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs\n'}
+[9.813564] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg\n'}
+[9.813616] (system_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail\n'}
+[9.813664] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.813712] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__type_support.cpp\n'}
+[9.813759] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__type_support.cpp\n'}
+[9.813805] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.813849] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.813898] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.813944] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__type_support.cpp\n'}
+[9.813989] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__type_support.cpp\n'}
+[9.814036] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[9.814084] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[9.814129] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_cpp.so\n'}
+[9.814174] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[9.814220] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/pythonpath.sh\n'}
+[9.814263] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/pythonpath.dsv\n'}
+[9.814306] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs-0.0.0-py3.12.egg-info\n'}
+[9.814351] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[9.814396] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[9.814438] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[9.814484] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[9.814528] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs\n'}
+[9.814569] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[9.814612] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/_system_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[9.814656] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/_system_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.814699] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[9.814742] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/_system_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[9.814785] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg\n'}
+[9.814828] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_response.py\n'}
+[9.814871] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_status_s.c\n'}
+[9.814914] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_event_s.c\n'}
+[9.814956] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_event.py\n'}
+[9.814997] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_notioncmd_s.c\n'}
+[9.815040] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_response_s.c\n'}
+[9.815240] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_status.py\n'}
+[9.815299] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/__init__.py\n'}
+[9.815347] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_notioncmd.py\n'}
+[9.815395] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_c.so\n'}
+[9.815444] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/__init__.py\n'}
+[9.839141] (-) TimerEvent: {}
+[9.857899] (system_msgs) StdoutLine: {'line': b"Listing '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs'...\n"}
+[9.858067] (system_msgs) StdoutLine: {'line': b"Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/__init__.py'...\n"}
+[9.858160] (system_msgs) StdoutLine: {'line': b"Listing '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg'...\n"}
+[9.858213] (system_msgs) StdoutLine: {'line': b"Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/__init__.py'...\n"}
+[9.858261] (system_msgs) StdoutLine: {'line': b"Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_response.py'...\n"}
+[9.858315] (system_msgs) StdoutLine: {'line': b"Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_event.py'...\n"}
+[9.858358] (system_msgs) StdoutLine: {'line': b"Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_notioncmd.py'...\n"}
+[9.858402] (system_msgs) StdoutLine: {'line': b"Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_status.py'...\n"}
+[9.864502] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[9.864756] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[9.865052] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[9.865319] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[9.865428] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_c.so\n'}
+[9.865609] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[9.865677] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_generator_py.so\n'}
+[9.865885] (system_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_generator_py.so" to ""\n'}
+[9.866011] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmEvent.idl\n'}
+[9.866066] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmNotioncmd.idl\n'}
+[9.866114] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmStatus.idl\n'}
+[9.866298] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/Response.idl\n'}
+[9.866360] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmEvent.msg\n'}
+[9.866493] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmNotioncmd.msg\n'}
+[9.866674] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmStatus.msg\n'}
+[9.866871] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/Response.msg\n'}
+[9.866971] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/ament_index/resource_index/package_run_dependencies/system_msgs\n'}
+[9.867166] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/ament_index/resource_index/parent_prefix_path/system_msgs\n'}
+[9.867447] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/ament_prefix_path.sh\n'}
+[9.867671] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/ament_prefix_path.dsv\n'}
+[9.867801] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/path.sh\n'}
+[9.867948] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/path.dsv\n'}
+[9.867995] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/local_setup.bash\n'}
+[9.868047] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/local_setup.sh\n'}
+[9.868138] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/local_setup.zsh\n'}
+[9.868316] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/local_setup.dsv\n'}
+[9.868378] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/package.dsv\n'}
+[9.868555] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/ament_index/resource_index/packages/system_msgs\n'}
+[9.868868] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_generator_cExport.cmake\n'}
+[9.869089] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.869388] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.869475] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.869678] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_generator_cppExport.cmake\n'}
+[9.869917] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.869999] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.870159] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.870247] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.870477] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_cExport.cmake\n'}
+[9.870588] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.870732] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.870943] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.871104] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[9.871236] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.871365] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_generator_pyExport.cmake\n'}
+[9.871517] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.871593] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[9.871721] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.871850] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.871979] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.872107] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.872325] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.872388] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.872434] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgsConfig.cmake\n'}
+[9.872481] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgsConfig-version.cmake\n'}
+[9.872523] (system_msgs) StdoutLine: {'line': b'-- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/package.xml\n'}
+[9.874276] (system_msgs) CommandEnded: {'returncode': 0}
+[9.901078] (system_msgs) JobEnded: {'identifier': 'system_msgs', 'rc': 0}
+[9.902412] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[9.939287] (-) TimerEvent: {}
+[10.039803] (-) TimerEvent: {}
+[10.140702] (-) TimerEvent: {}
+[10.241173] (-) TimerEvent: {}
+[10.341590] (-) TimerEvent: {}
+[10.442051] (-) TimerEvent: {}
+[10.542392] (-) TimerEvent: {}
+[10.642700] (-) TimerEvent: {}
+[10.743014] (-) TimerEvent: {}
+[10.843381] (-) TimerEvent: {}
+[10.943714] (-) TimerEvent: {}
+[11.044101] (-) TimerEvent: {}
+[11.144568] (-) TimerEvent: {}
+[11.234889] (mypkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/mypkg', 'build', '--build-base', '/home/nagi/ros2_ws/build/mypkg/build', 'install', '--record', '/home/nagi/ros2_ws/build/mypkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nagi/ros2_ws/src/mypkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nagi', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nagi/ros2_ws/install/system_msgs/lib:/home/nagi/ros2_ws/install/person_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nagi', 'OLDPWD': '/home/nagi/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/nagi/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nagi', 'NAME': 'MSI', 'WSL_INTEROP': '/run/WSL/355_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Users/Owner/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Owner/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/nagi/ros2_ws/install/system_msgs:/home/nagi/ros2_ws/install/person_msgs:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'LOCALHOST', 'PWD': '/home/nagi/ros2_ws/build/mypkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nagi/ros2_ws/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages:/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages:/home/nagi/ros2_ws/build/mypkg:/home/nagi/ros2_ws/install/person_msgs/lib/python3.12/site-packages:/home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/nagi/ros2_ws/install/system_msgs:/home/nagi/ros2_ws/install/person_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': ''}, 'shell': False}
+[11.244846] (-) TimerEvent: {}
+[11.345171] (-) TimerEvent: {}
+[11.445502] (-) TimerEvent: {}
+[11.448129] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[11.448668] (mypkg) StdoutLine: {'line': b'creating ../../build/mypkg/mypkg.egg-info\n'}
+[11.463097] (mypkg) StdoutLine: {'line': b'writing ../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[11.463326] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[11.463501] (mypkg) StdoutLine: {'line': b'writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[11.463671] (mypkg) StdoutLine: {'line': b'writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[11.463855] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[11.464113] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[11.496661] (mypkg) StdoutLine: {'line': b"reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[11.497948] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[11.498415] (mypkg) StdoutLine: {'line': b'running build\n'}
+[11.498495] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[11.498558] (mypkg) StdoutLine: {'line': b'creating /home/nagi/ros2_ws/build/mypkg/build\n'}
+[11.498924] (mypkg) StdoutLine: {'line': b'creating /home/nagi/ros2_ws/build/mypkg/build/lib\n'}
+[11.499437] (mypkg) StdoutLine: {'line': b'creating /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg\n'}
+[11.499686] (mypkg) StdoutLine: {'line': b'copying mypkg/event.py -> /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg\n'}
+[11.499877] (mypkg) StdoutLine: {'line': b'copying mypkg/judge.py -> /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg\n'}
+[11.500058] (mypkg) StdoutLine: {'line': b'copying mypkg/status.py -> /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg\n'}
+[11.500267] (mypkg) StdoutLine: {'line': b'copying mypkg/response.py -> /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg\n'}
+[11.500424] (mypkg) StdoutLine: {'line': b'copying mypkg/__init__.py -> /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg\n'}
+[11.500538] (mypkg) StdoutLine: {'line': b'running install\n'}
+[11.507668] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[11.522456] (mypkg) StdoutLine: {'line': b'creating /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg\n'}
+[11.522668] (mypkg) StdoutLine: {'line': b'copying /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg/event.py -> /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg\n'}
+[11.522948] (mypkg) StdoutLine: {'line': b'copying /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg/judge.py -> /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg\n'}
+[11.523022] (mypkg) StdoutLine: {'line': b'copying /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg/status.py -> /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg\n'}
+[11.523070] (mypkg) StdoutLine: {'line': b'copying /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg/response.py -> /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg\n'}
+[11.523268] (mypkg) StdoutLine: {'line': b'copying /home/nagi/ros2_ws/build/mypkg/build/lib/mypkg/__init__.py -> /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg\n'}
+[11.523619] (mypkg) StdoutLine: {'line': b'byte-compiling /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg/event.py to event.cpython-312.pyc\n'}
+[11.524541] (mypkg) StdoutLine: {'line': b'byte-compiling /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg/judge.py to judge.cpython-312.pyc\n'}
+[11.525682] (mypkg) StdoutLine: {'line': b'byte-compiling /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg/status.py to status.cpython-312.pyc\n'}
+[11.526109] (mypkg) StdoutLine: {'line': b'byte-compiling /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg/response.py to response.cpython-312.pyc\n'}
+[11.526523] (mypkg) StdoutLine: {'line': b'byte-compiling /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg/__init__.py to __init__.cpython-312.pyc\n'}
+[11.526683] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[11.526787] (mypkg) StdoutLine: {'line': b'creating /home/nagi/ros2_ws/install/mypkg/share/ament_index\n'}
+[11.527076] (mypkg) StdoutLine: {'line': b'creating /home/nagi/ros2_ws/install/mypkg/share/ament_index/resource_index\n'}
+[11.527255] (mypkg) StdoutLine: {'line': b'creating /home/nagi/ros2_ws/install/mypkg/share/ament_index/resource_index/packages\n'}
+[11.527431] (mypkg) StdoutLine: {'line': b'copying resource/mypkg -> /home/nagi/ros2_ws/install/mypkg/share/ament_index/resource_index/packages\n'}
+[11.527630] (mypkg) StdoutLine: {'line': b'copying package.xml -> /home/nagi/ros2_ws/install/mypkg/share/mypkg\n'}
+[11.527875] (mypkg) StdoutLine: {'line': b'copying launch/medicine_rm.launch.py -> /home/nagi/ros2_ws/install/mypkg/share/mypkg\n'}
+[11.527957] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.542640] (mypkg) StdoutLine: {'line': b'Copying ../../build/mypkg/mypkg.egg-info to /home/nagi/ros2_ws/install/mypkg/lib/python3.12/site-packages/mypkg-0.0.0-py3.12.egg-info\n'}
+[11.543539] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[11.545654] (-) TimerEvent: {}
+[11.645117] (mypkg) StdoutLine: {'line': b'Installing event script to /home/nagi/ros2_ws/install/mypkg/lib/mypkg\n'}
+[11.645498] (mypkg) StdoutLine: {'line': b'Installing judge script to /home/nagi/ros2_ws/install/mypkg/lib/mypkg\n'}
+[11.645711] (-) TimerEvent: {}
+[11.645812] (mypkg) StdoutLine: {'line': b'Installing response script to /home/nagi/ros2_ws/install/mypkg/lib/mypkg\n'}
+[11.645881] (mypkg) StdoutLine: {'line': b'Installing status script to /home/nagi/ros2_ws/install/mypkg/lib/mypkg\n'}
+[11.646114] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/nagi/ros2_ws/build/mypkg/install.log'\n"}
+[11.674392] (mypkg) CommandEnded: {'returncode': 0}
+[11.679588] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[11.680648] (-) EventReactorShutdown: {}

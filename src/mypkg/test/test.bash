@@ -10,10 +10,10 @@ dir=~
 
 cd $dir/ros2_ws
 colcon build
-source $dir/.bashrc
+source install/setup.bash
 
 #全ノードを実行して結果を保存
-timeout 15 ros2 launch medicine_reminder reminder.launch.py > /tmp/medicine_reminder.log
+timeout 15 ros2 launch mypkg medicine_rm.launch.py > /tmp/medicine_reminder.log
 
 #reminder_statusが流れている(ノード通信が成立している)かのテスト
 cat /tmp/medicine_reminder.log | grep "status:"
