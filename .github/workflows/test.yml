@@ -1,29 +1,33 @@
 name: test
 on:
   push:
+
 jobs:
   test:
     runs-on: ubuntu-24.04
     container: ros:jazzy-ros-base
     steps:
       - uses: actions/checkout@v3
+
       - name: build and test
         shell: bash
         run: |
-          # ワークスペースの作成
+          #ワークスペース構造の構築
           mkdir -p /root/ros2_ws/src
-          
-          # リポジトリ内の src 以下にある mypkg と system_msgs をコピー
           cp -r src/mypkg /root/ros2_ws/src/
           cp -r src/system_msgs /root/ros2_ws/src/
-          
-          # 依存関係のインストール (rosdep)
-          cd /root/ros2_ws
+
+          #依存ツールのインストール
           apt-get update
-          rosdep update
-          rosdep install -i --from-path src --rosdistro jazzy -y
           
-          # テストスクリプトの実行
-          # bash -x で詳細ログを出しつつ実行
+          apt-get install -y python3-colcon-common-extensions
+
+          #依存関係の解決
+          cd /root/ros2_ws
+          rosdep update
+          # --from-paths で src 内の全パッケージの依存関係をインストール
+          rosdep install -i --from-path src --rosdistro jazzy -y
+
+          #テストの実行
           chmod +x src/mypkg/test/test.bash
           ./src/mypkg/test/test.bash /root
