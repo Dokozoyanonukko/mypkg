@@ -528,12 +528,12 @@
 			"id" : "system_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 53,
-			"id" : "system_msgs__py::@e30f8281788c2327dead"
-		},
-		{
 			"backtrace" : 9,
 			"id" : "system_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 53,
+			"id" : "system_msgs__py::@e30f8281788c2327dead"
 		}
 	],
 	"id" : "system_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",

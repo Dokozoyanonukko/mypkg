@@ -27,26 +27,25 @@ head -n 20 /tmp/medicine_reminder.log
 sleep 2
 
 #判定
-echo "--- Starting Formal Verification ---"
 LOG=/tmp/medicine_reminder.log
 
 #通信成立するか
 if grep -qi "status:" $LOG; then echo "Test 1: Node Communication... PASSED"; else echo "Test 1: FAILED"; exit 1; fi
 
-#初期状態が０か
-if grep -qi "status: 0" $LOG; then echo "Test 2: Initial State (OFF)... PASSED"; else echo "Test 2: FAILED"; exit 1; fi
+#初期状態がOFFか
+if grep -qi "status: OFF" $LOG; then echo "Test 2: Initial State (OFF)... PASSED"; else echo "Test 2: FAILED"; exit 1; fi
 
-#イベントに反応があるか
-if grep -qi "status: 1" $LOG; then echo "Test 3: Event Detection (NORMAL)... PASSED"; else echo "Test 3: FAILED"; exit 1; fi
+#イベント発生でNOMALになるか
+if grep -qi "status: NORMAL" $LOG; then echo "Test 3: Event Detection (NORMAL)... PASSED"; else echo "Test 3: FAILED"; exit 1; fi
 
-#URGENTが出るか 
-if grep -qi "status: 2" $LOG; then echo "Test 4: Alert Logic (URGENT)... PASSED"; else echo "Test 4: FAILED"; exit 1; fi
+#URGENTが発動するか
+if grep -qi "status: URGENT" $LOG; then echo "Test 4: Alert Logic (URGENT)... PASSED"; else echo "Test 4: FAILED"; exit 1; fi
 
-#TAKEN受信後に０に戻るか
-if tail -n 20 $LOG | grep -qi "status: 0"; then echo "Test 5: Recovery Logic (BACK TO OFF)... PASSED"; else echo "Test 5: FAILED"; exit 1; fi
+#TAKENでOFFに復帰するか
+if tail -n 20 $LOG | grep -qi "status: OFF"; then echo "Test 5: Recovery Logic (BACK TO OFF)... PASSED"; else echo "Test 5: FAILED"; exit 1; fi
 
-#ステータスが重複しないか
-CHANGE_COUNT=$(grep -oEi "status: [0-2]" $LOG | uniq | wc -l)
+#重複ステータスが排除されるか
+CHANGE_COUNT=$(grep -oEi "status: (OFF|NORMAL|URGENT)" $LOG | uniq | wc -l)
 if [ "$CHANGE_COUNT" -ge 3 ]; then
     echo "Test 6: Message Deduplication (uniq)... PASSED (Changes: $CHANGE_COUNT)"
 else
@@ -55,5 +54,4 @@ else
     cat $LOG
     exit 1
 fi
-
 echo "--- All Tests Completed Successfully ---"
