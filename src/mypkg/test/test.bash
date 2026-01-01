@@ -18,7 +18,7 @@ echo "=== Step 2: Running System & Simulating User Response ==="
 
 #タイムアウト
 export PYTHONUNBUFFERED=1
-timeout 35 ros2 launch mypkg medicine_rm.launch.py --ros-args --log-level INFO > /tmp/medicine_reminder.log || [ $? -eq 124 ]
+timeout 35 ros2 launch mypkg medicine_rm.launch.py > /tmp/medicine_reminder.log 2>&1 || [ $? -eq 124 ]
 
 echo "--- Captured Log Preview ---"
 head -n 20 /tmp/medicine_reminder.log
