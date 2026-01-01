@@ -12,25 +12,28 @@ cd $dir/ros2_ws
 colcon build
 source install/setup.bash
 
-#全ノードを実行して結果を保存
-timeout 15 ros2 launch mypkg medicine_rm.launch.py > /tmp/medicine_reminder.log
+# 20秒待つ
+(sleep 20; ros2 topic pub -1 /medicine_response system_msgs/msg/Response "{response: 1}") &
 
-#reminder_statusが流れている(ノード通信が成立している)かのテスト
-cat /tmp/medicine_reminder.log | grep "status:"
+timeout 30 ros2 launch mypkg medicine_rm.launch.py > /tmp/medicine_reminder.log || [ $? -eq 124 ]
 
-#初期状態が存在するか
-cat /tmp/medicine_reminder.log | grep "status: 0"
+#判定
+echo "--- Test Results Analysis ---"
 
-#URGENTが出る （judgenodeが機能している）か
-cat /tmp/medicine_reminder.log | grep "status: 2"
+#通信が成立するか
+grep "status:" /tmp/medicine_reminder.log
 
-#URGENTが最低1回以上起きるか
-[ $(grep "status: 2" /tmp/medicine_reminder.log | wc -l) -ge 1 ]
+#状態遷移の全パターン確認
+grep "status: 1" /tmp/medicine_reminder.log  # NORMALになったか
+grep "status: 2" /tmp/medicine_reminder.log  # URGENTになったか
+tail -n 20 /tmp/medicine_reminder.log | grep "status: 0"  # 最後にOFFに戻ったか
 
-#OFFに戻る（ユーザ応答が反映される）か
-cat /tmp/medicine_reminder.log | grep "status: 0"
+#ステータス重複を排除できたか
+CHANGE_COUNT=$(grep -o "status: [0-2]" /tmp/medicine_reminder.log | uniq | wc -l)
+echo "Status change count: $CHANGE_COUNT"
+[ "$CHANGE_COUNT" -ge 4 ]
 
-#同じ命令が連続しない設計が機能しているか
+#目視確認用のログも出力
 grep "status:" /tmp/medicine_reminder.log | uniq -c
 
-
+echo "--- All Tests Passed! ---"
