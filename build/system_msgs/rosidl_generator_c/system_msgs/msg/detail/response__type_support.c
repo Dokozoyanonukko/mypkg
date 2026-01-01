@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "system_msgs/msg/detail/response__type_support.h"
-#include "system_msgs/msg/detail/response__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "system_msgs/msg/detail/response__functions.h"
+#include "system_msgs/msg/detail/response__struct.h"
+#include "system_msgs/msg/detail/response__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

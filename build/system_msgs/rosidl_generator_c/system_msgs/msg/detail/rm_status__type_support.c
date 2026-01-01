@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "rosidl_typesupport_interface/macros.h"
 #include "system_msgs/msg/detail/rm_status__struct.h"
 #include "system_msgs/msg/detail/rm_status__functions.h"
 #include "system_msgs/msg/detail/rm_status__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"
