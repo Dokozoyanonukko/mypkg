@@ -1,6 +1,7 @@
 # mypkg-服薬支援デモシステム
 
 服用イベントの発生から完了までを監視し、ユーザ応答と経過時間に応じて3段階の通知ステータス（待機・通常・緊急）をパブリッシュする服薬支援デモシステム
+
 ![test](https://github.com/Dokozoyanonukko/mypkg/actions/workflows/test.yml/badge.svg)
 
 # 使い方
