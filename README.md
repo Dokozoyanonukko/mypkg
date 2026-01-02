@@ -1,12 +1,12 @@
 # mypkg-服薬支援デモシステム
 
 服用イベントの発生から完了までを監視し、ユーザ応答と経過時間に応じて3段階の通知ステータス（待機・通常・緊急）をパブリッシュする服薬支援デモシステム
-![test](https://github.com/Dokozoyanonukko/ros2_ws/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/Dokozoyanonukko/mypkg/actions/workflows/test.yml/badge.svg)
 
 # 使い方
 リポジトリをコピーしたいディレクトリにて以下の操作を行ってください。
 
-'''
+```bash
 $ git clone git@github.com:Dokozoyanonukko/mypkg.git
 $ cd ~/ros2_ws
 $ ros2 launch mypkg medicine_rm.launch.py
@@ -26,7 +26,7 @@ $ ros2 launch mypkg medicine_rm.launch.py
 [judge-2] [WARN] [1767291324.089481911] [judge]: Status: URGENT (10.0s elapsed!)
 [event-1] [INFO] [1767291329.084753546] [event]: Medication Event Sent! (event=1)
 [judge-2] [INFO] [1767291330.095119403] [judge]: Status: OFF (Medication Taken)
-'''
+```
 
 # デモ内容説明
 1. event.pyが5 秒ごとに服薬イベント（服薬時間アナウンス）をパブリッシュ
