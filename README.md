@@ -9,7 +9,11 @@
 
 ```bash
 $ git clone git@github.com:Dokozoyanonukko/mypkg.git
-$ cd ~/ros2_ws
+$ cd ~/mypkg
+$ rm -rf build install log
+$ colcon build --packages-select system_msgs
+$ colcon build --packages-select mypkg
+$ source install/setup.bash
 $ ros2 launch mypkg medicine_rm.launch.py
 
 #以下出力例
@@ -36,7 +40,7 @@ $ ros2 launch mypkg medicine_rm.launch.py
 4. status.pyがステータス情報を受け取り、現在のステータスを出力する
 5. 以上の流れを繰り返す
 
-[!NOTE] 本パッケージはデモシステムのため、服薬間隔が5秒、ユーザの服薬を示す 応答(TAKEN)は20秒に1回に設定しています。
+> [!NOTE] 本パッケージはデモシステムのため、服薬間隔が5秒、ユーザの服薬を示す 応答(TAKEN)は20秒に1回に設定しています。
 
 # 必要なソフトウェア
 * Python
