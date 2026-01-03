@@ -22,10 +22,10 @@
 ## トピック一覧
 | ノード名 | Publish/Subscribe | トピック名 | 型 | 内容 | 
 |:---:|:---:|:---:|:---:|:---:|
-| event | Publish | **/reminder_event** | **system_msgs/msg/RmEvent** | ###### 服薬イベント発行 |
-| response | Publish | **/response** | **system_msgs/msg/Response** | ###### ユーザ応答 |
-| judge | Subscribe<br/>Subscribe<br/>Publish | /reminder_event<br/>/response<br/>**/reminder_command** | system_msgs/msg/RmEvent<br/>system_msgs/msg/Response<br/>**system_msgs/msg/RmNotioncmd** | <br/><br/>###### 判定結果 |
-| status | Subscribe<br/>Publish | /reminder_command<br/>**/reminder_status** | system_msgs/msg/RmNotioncmd<br/>**system_msgs/msg/RmStatus** | <br/>###### 現在ステータス |
+| event | Publish | **/reminder_event** | **system_msgs/msg/RmEvent** |イベント発行|
+| response | Publish | **/response** | **system_msgs/msg/Response** |ユーザ応答|
+| judge | Subscribe<br/>Subscribe<br/>Publish | /reminder_event<br/>/response<br/>**/reminder_command** | system_msgs/msg/RmEvent<br/>system_msgs/msg/Response<br/>**system_msgs/msg/RmNotioncmd** | <br/><br/>判定結果|
+| status | Subscribe<br/>Publish | /reminder_command<br/>**/reminder_status** | system_msgs/msg/RmNotioncmd<br/>**system_msgs/msg/RmStatus** | <br/>######ステータス|
 
 # 使い方
 リポジトリをコピーしたいディレクトリにて以下の操作を行ってください。
