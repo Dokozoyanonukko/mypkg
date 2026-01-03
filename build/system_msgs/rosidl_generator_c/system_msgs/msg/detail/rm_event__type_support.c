@@ -4,9 +4,9 @@
 
 #include <string.h>
 
+#include "system_msgs/msg/detail/rm_event__type_support.h"
 #include "system_msgs/msg/detail/rm_event__struct.h"
 #include "system_msgs/msg/detail/rm_event__functions.h"
-#include "system_msgs/msg/detail/rm_event__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

@@ -1,0 +1,334 @@
+[0.037s] Invoking command in '/home/nagi/ros2_ws/build/system_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy /usr/bin/cmake /home/nagi/ros2_ws/src/system_msgs -DCMAKE_INSTALL_PREFIX=/home/nagi/ros2_ws/install/system_msgs
+[1.464s] -- The C compiler identification is GNU 13.3.0
+[4.675s] -- The CXX compiler identification is GNU 13.3.0
+[7.777s] -- Detecting C compiler ABI info
+[8.842s] -- Detecting C compiler ABI info - done
+[8.854s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.855s] -- Detecting C compile features
+[8.856s] -- Detecting C compile features - done
+[9.339s] -- Detecting CXX compiler ABI info
+[10.607s] -- Detecting CXX compiler ABI info - done
+[10.619s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[10.620s] -- Detecting CXX compile features
+[10.620s] -- Detecting CXX compile features - done
+[10.635s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[10.947s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[11.343s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[12.509s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[12.616s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[12.783s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[12.927s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[13.093s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[13.225s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[14.481s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[15.930s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[16.473s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[16.478s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[16.665s] -- Found PythonExtra: /usr/bin/python3  
+[17.706s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[17.764s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[17.907s] -- Added test 'lint_cmake' to check CMake code style
+[17.922s] -- Added test 'xmllint' to check XML markup files
+[17.947s] -- Configuring done (17.7s)
+[18.042s] -- Generating done (0.1s)
+[18.055s] -- Build files have been written to: /home/nagi/ros2_ws/build/system_msgs
+[18.065s] Invoked command in '/home/nagi/ros2_ws/build/system_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy /usr/bin/cmake /home/nagi/ros2_ws/src/system_msgs -DCMAKE_INSTALL_PREFIX=/home/nagi/ros2_ws/install/system_msgs
+[18.067s] Invoking command in '/home/nagi/ros2_ws/build/system_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy /usr/bin/cmake --build /home/nagi/ros2_ws/build/system_msgs -- -j20 -l20
+[18.152s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[18.168s] [  1%] Built target ament_cmake_python_copy_system_msgs
+[18.425s] running egg_info
+[18.426s] creating system_msgs.egg-info
+[18.444s] writing system_msgs.egg-info/PKG-INFO
+[18.444s] writing dependency_links to system_msgs.egg-info/dependency_links.txt
+[18.444s] writing top-level names to system_msgs.egg-info/top_level.txt
+[18.444s] writing manifest file 'system_msgs.egg-info/SOURCES.txt'
+[18.497s] reading manifest file 'system_msgs.egg-info/SOURCES.txt'
+[18.498s] writing manifest file 'system_msgs.egg-info/SOURCES.txt'
+[18.502s] [  1%] Built target system_msgs__rosidl_generator_type_description
+[18.516s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[18.528s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[18.531s] [  4%] Built target ament_cmake_python_build_system_msgs_egg
+[18.963s] [  4%] Built target system_msgs__cpp
+[19.044s] [  6%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_event__description.c.o[0m
+[19.047s] [  7%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_event__type_support.c.o[0m
+[19.047s] [  9%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_notioncmd__functions.c.o[0m
+[19.047s] [ 14%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_notioncmd__description.c.o[0m
+[19.047s] [ 14%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_status__description.c.o[0m
+[19.048s] [ 14%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_event__functions.c.o[0m
+[19.048s] [ 15%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_notioncmd__type_support.c.o[0m
+[19.049s] [ 17%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_status__type_support.c.o[0m
+[19.049s] [ 20%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/rm_status__functions.c.o[0m
+[19.049s] [ 20%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/response__description.c.o[0m
+[19.050s] [ 21%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/response__type_support.c.o[0m
+[19.052s] [ 23%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_c.dir/rosidl_generator_c/system_msgs/msg/detail/response__functions.c.o[0m
+[19.147s] [ 25%] [32m[1mLinking C shared library libsystem_msgs__rosidl_generator_c.so[0m
+[19.599s] [ 25%] Built target system_msgs__rosidl_generator_c
+[19.672s] [ 28%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[19.673s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[19.674s] [ 29%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[19.677s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[19.677s] [ 32%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[19.681s] [ 34%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[20.087s] [ 35%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/system_msgs/msg/rm_event__type_support.cpp.o[0m
+[20.090s] [ 37%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/system_msgs/msg/rm_notioncmd__type_support.cpp.o[0m
+[20.091s] [ 39%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/system_msgs/msg/rm_status__type_support.cpp.o[0m
+[20.094s] [ 40%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/system_msgs/msg/response__type_support.cpp.o[0m
+[20.148s] [ 43%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/system_msgs/msg/detail/rm_event__type_support.c.o[0m
+[20.149s] [ 43%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/system_msgs/msg/detail/response__type_support.cpp.o[0m
+[20.151s] [ 45%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/system_msgs/msg/detail/rm_notioncmd__type_support.cpp.o[0m
+[20.153s] [ 46%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/system_msgs/msg/detail/rm_notioncmd__type_support.c.o[0m
+[20.154s] [ 48%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/system_msgs/msg/detail/rm_event__type_support.cpp.o[0m
+[20.154s] [ 50%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/system_msgs/msg/detail/response__type_support.c.o[0m
+[20.157s] [ 51%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/system_msgs/msg/detail/rm_status__type_support.cpp.o[0m
+[20.165s] [ 53%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/system_msgs/msg/detail/rm_status__type_support.c.o[0m
+[20.242s] [ 54%] [32m[1mLinking CXX shared library libsystem_msgs__rosidl_typesupport_c.so[0m
+[20.260s] [ 56%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/system_msgs/msg/detail/dds_fastrtps/rm_notioncmd__type_support.cpp.o[0m
+[20.261s] [ 57%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/system_msgs/msg/detail/dds_fastrtps/rm_event__type_support.cpp.o[0m
+[20.261s] [ 59%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/system_msgs/msg/detail/dds_fastrtps/rm_status__type_support.cpp.o[0m
+[20.264s] [ 60%] [32m[1mLinking C shared library libsystem_msgs__rosidl_typesupport_introspection_c.so[0m
+[20.274s] [ 62%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/system_msgs/msg/detail/dds_fastrtps/response__type_support.cpp.o[0m
+[20.308s] [ 65%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/system_msgs/msg/rm_event__type_support.cpp.o[0m
+[20.309s] [ 65%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/system_msgs/msg/response__type_support.cpp.o[0m
+[20.310s] [ 67%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/system_msgs/msg/rm_notioncmd__type_support.cpp.o[0m
+[20.311s] [ 68%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/system_msgs/msg/rm_status__type_support.cpp.o[0m
+[20.502s] [ 68%] Built target system_msgs__rosidl_typesupport_introspection_c
+[20.521s] [ 68%] Built target system_msgs__rosidl_typesupport_c
+[20.701s] [ 71%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/system_msgs/msg/detail/response__type_support_c.cpp.o[0m
+[20.701s] [ 71%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/system_msgs/msg/detail/rm_status__type_support_c.cpp.o[0m
+[20.727s] [ 73%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/system_msgs/msg/detail/rm_notioncmd__type_support_c.cpp.o[0m
+[20.754s] [ 75%] [32mBuilding CXX object CMakeFiles/system_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/system_msgs/msg/detail/rm_event__type_support_c.cpp.o[0m
+[21.580s] [ 76%] [32m[1mLinking CXX shared library libsystem_msgs__rosidl_typesupport_cpp.so[0m
+[21.590s] [ 78%] [32m[1mLinking CXX shared library libsystem_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[21.808s] [ 78%] Built target system_msgs__rosidl_typesupport_cpp
+[21.851s] [ 78%] Built target system_msgs__rosidl_typesupport_introspection_cpp
+[21.939s] [ 79%] [32m[1mLinking CXX shared library libsystem_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[22.121s] [ 81%] [32m[1mLinking CXX shared library libsystem_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[22.206s] [ 81%] Built target system_msgs__rosidl_typesupport_fastrtps_cpp
+[22.508s] [ 81%] Built target system_msgs__rosidl_typesupport_fastrtps_c
+[22.537s] [ 81%] Built target system_msgs
+[22.566s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[23.302s] [ 82%] Built target system_msgs__py
+[23.330s] [ 84%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_py.dir/rosidl_generator_py/system_msgs/msg/_rm_event_s.c.o[0m
+[23.330s] [ 85%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_py.dir/rosidl_generator_py/system_msgs/msg/_rm_notioncmd_s.c.o[0m
+[23.330s] [ 87%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_py.dir/rosidl_generator_py/system_msgs/msg/_rm_status_s.c.o[0m
+[23.330s] [ 89%] [32mBuilding C object CMakeFiles/system_msgs__rosidl_generator_py.dir/rosidl_generator_py/system_msgs/msg/_response_s.c.o[0m
+[23.863s] [ 90%] [32m[1mLinking C shared library libsystem_msgs__rosidl_generator_py.so[0m
+[24.369s] [ 90%] Built target system_msgs__rosidl_generator_py
+[24.412s] [ 92%] [32mBuilding C object CMakeFiles/system_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/system_msgs/_system_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[24.414s] [ 95%] [32mBuilding C object CMakeFiles/system_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/system_msgs/_system_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[24.414s] [ 95%] [32mBuilding C object CMakeFiles/system_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/system_msgs/_system_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[24.528s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/system_msgs/system_msgs_s__rosidl_typesupport_c.so[0m
+[24.529s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/system_msgs/system_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[24.532s] [100%] [32m[1mLinking C shared module rosidl_generator_py/system_msgs/system_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[24.696s] [100%] Built target system_msgs_s__rosidl_typesupport_introspection_c
+[24.699s] [100%] Built target system_msgs_s__rosidl_typesupport_c
+[24.701s] [100%] Built target system_msgs_s__rosidl_typesupport_fastrtps_c
+[24.716s] Invoked command in '/home/nagi/ros2_ws/build/system_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy /usr/bin/cmake --build /home/nagi/ros2_ws/build/system_msgs -- -j20 -l20
+[24.725s] Invoking command in '/home/nagi/ros2_ws/build/system_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy /usr/bin/cmake --install /home/nagi/ros2_ws/build/system_msgs
+[24.734s] -- Install configuration: ""
+[24.735s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/ament_index/resource_index/rosidl_interfaces/system_msgs
+[24.736s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmEvent.json
+[24.736s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmNotioncmd.json
+[24.736s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmStatus.json
+[24.737s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/Response.json
+[24.737s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs
+[24.737s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg
+[24.737s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_notioncmd.h
+[24.737s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_event.h
+[24.738s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rosidl_generator_c__visibility_control.h
+[24.738s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/response.h
+[24.738s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_status.h
+[24.738s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail
+[24.738s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__type_support.c
+[24.739s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__functions.c
+[24.739s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__description.c
+[24.739s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__struct.h
+[24.739s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__type_support.h
+[24.739s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__functions.h
+[24.739s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__type_support.c
+[24.739s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__type_support.c
+[24.740s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__type_support.h
+[24.740s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__type_support.c
+[24.740s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__struct.h
+[24.740s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__functions.h
+[24.741s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__struct.h
+[24.741s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__functions.h
+[24.741s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__type_support.h
+[24.741s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__functions.c
+[24.741s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__functions.c
+[24.741s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__struct.h
+[24.741s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__type_support.h
+[24.741s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__functions.c
+[24.741s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__description.c
+[24.742s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__description.c
+[24.742s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__description.c
+[24.742s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__functions.h
+[24.742s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/library_path.sh
+[24.742s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/library_path.dsv
+[24.742s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_generator_c.so
+[24.743s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_generator_c.so" to ""
+[24.743s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs
+[24.743s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg
+[24.743s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[24.743s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail
+[24.743s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__rosidl_typesupport_fastrtps_c.h
+[24.744s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__rosidl_typesupport_fastrtps_c.h
+[24.744s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__rosidl_typesupport_fastrtps_c.h
+[24.744s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__rosidl_typesupport_fastrtps_c.h
+[24.744s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_fastrtps_c.so
+[24.744s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[24.744s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs
+[24.745s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg
+[24.745s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_status.hpp
+[24.745s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_notioncmd.hpp
+[24.745s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/response.hpp
+[24.745s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail
+[24.745s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__traits.hpp
+[24.745s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__builder.hpp
+[24.746s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__traits.hpp
+[24.746s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__struct.hpp
+[24.746s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__traits.hpp
+[24.746s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__type_support.hpp
+[24.746s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__type_support.hpp
+[24.746s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__type_support.hpp
+[24.746s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__builder.hpp
+[24.746s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__builder.hpp
+[24.746s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__traits.hpp
+[24.747s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__struct.hpp
+[24.747s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__struct.hpp
+[24.747s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__struct.hpp
+[24.747s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__builder.hpp
+[24.747s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__type_support.hpp
+[24.748s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[24.748s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rm_event.hpp
+[24.748s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs
+[24.748s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg
+[24.749s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[24.749s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail
+[24.749s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__rosidl_typesupport_fastrtps_cpp.hpp
+[24.749s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/dds_fastrtps
+[24.749s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__rosidl_typesupport_fastrtps_cpp.hpp
+[24.749s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__rosidl_typesupport_fastrtps_cpp.hpp
+[24.749s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__rosidl_typesupport_fastrtps_cpp.hpp
+[24.749s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_fastrtps_cpp.so
+[24.750s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[24.750s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs
+[24.750s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg
+[24.750s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[24.750s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail
+[24.750s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__type_support.c
+[24.751s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__rosidl_typesupport_introspection_c.h
+[24.751s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__rosidl_typesupport_introspection_c.h
+[24.751s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__type_support.c
+[24.751s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__type_support.c
+[24.752s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__rosidl_typesupport_introspection_c.h
+[24.752s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__type_support.c
+[24.752s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__rosidl_typesupport_introspection_c.h
+[24.752s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_introspection_c.so
+[24.752s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_introspection_c.so" to ""
+[24.753s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_c.so
+[24.753s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_c.so" to ""
+[24.753s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs
+[24.753s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg
+[24.753s] -- Up-to-date: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail
+[24.753s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__rosidl_typesupport_introspection_cpp.hpp
+[24.753s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__type_support.cpp
+[24.753s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_notioncmd__type_support.cpp
+[24.753s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__rosidl_typesupport_introspection_cpp.hpp
+[24.753s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_event__rosidl_typesupport_introspection_cpp.hpp
+[24.753s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__rosidl_typesupport_introspection_cpp.hpp
+[24.753s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/response__type_support.cpp
+[24.753s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/include/system_msgs/system_msgs/msg/detail/rm_status__type_support.cpp
+[24.753s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_introspection_cpp.so
+[24.754s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[24.754s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_cpp.so
+[24.754s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_typesupport_cpp.so" to ""
+[24.754s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/pythonpath.sh
+[24.754s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/pythonpath.dsv
+[24.754s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs-0.0.0-py3.12.egg-info
+[24.754s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[24.754s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[24.754s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[24.755s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[24.755s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs
+[24.755s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_introspection_c.so
+[24.755s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/_system_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[24.755s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/_system_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[24.755s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_fastrtps_c.so
+[24.755s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/_system_msgs_s.ep.rosidl_typesupport_c.c
+[24.755s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg
+[24.755s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_response.py
+[24.755s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_status_s.c
+[24.756s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_event_s.c
+[24.756s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_event.py
+[24.756s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_notioncmd_s.c
+[24.756s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_response_s.c
+[24.756s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_status.py
+[24.756s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/__init__.py
+[24.756s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_notioncmd.py
+[24.756s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_c.so
+[24.756s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/__init__.py
+[24.807s] Listing '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs'...
+[24.807s] Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/__init__.py'...
+[24.807s] Listing '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg'...
+[24.807s] Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/__init__.py'...
+[24.807s] Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_response.py'...
+[24.807s] Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_event.py'...
+[24.807s] Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_notioncmd.py'...
+[24.807s] Compiling '/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/msg/_rm_status.py'...
+[24.814s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_fastrtps_c.so
+[24.814s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[24.814s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_introspection_c.so
+[24.814s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[24.814s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_c.so
+[24.815s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/python3.12/site-packages/system_msgs/system_msgs_s__rosidl_typesupport_c.so" to ""
+[24.815s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_generator_py.so
+[24.815s] -- Set non-toolchain portion of runtime path of "/home/nagi/ros2_ws/install/system_msgs/lib/libsystem_msgs__rosidl_generator_py.so" to ""
+[24.816s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmEvent.idl
+[24.816s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmNotioncmd.idl
+[24.816s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmStatus.idl
+[24.816s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/Response.idl
+[24.816s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmEvent.msg
+[24.816s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmNotioncmd.msg
+[24.816s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/RmStatus.msg
+[24.816s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/msg/Response.msg
+[24.816s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/ament_index/resource_index/package_run_dependencies/system_msgs
+[24.817s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/ament_index/resource_index/parent_prefix_path/system_msgs
+[24.817s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/ament_prefix_path.sh
+[24.817s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/ament_prefix_path.dsv
+[24.818s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/path.sh
+[24.818s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/environment/path.dsv
+[24.818s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/local_setup.bash
+[24.818s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/local_setup.sh
+[24.818s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/local_setup.zsh
+[24.818s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/local_setup.dsv
+[24.819s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/package.dsv
+[24.819s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/ament_index/resource_index/packages/system_msgs
+[24.819s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_generator_cExport.cmake
+[24.819s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_generator_cExport-noconfig.cmake
+[24.819s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[24.820s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[24.820s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_generator_cppExport.cmake
+[24.820s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[24.820s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[24.821s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_introspection_cExport.cmake
+[24.821s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[24.821s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_cExport.cmake
+[24.821s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[24.821s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[24.821s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[24.822s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_cppExport.cmake
+[24.822s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[24.822s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_generator_pyExport.cmake
+[24.822s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/export_system_msgs__rosidl_generator_pyExport-noconfig.cmake
+[24.822s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/rosidl_cmake-extras.cmake
+[24.822s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.822s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.823s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[24.823s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[24.823s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[24.823s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[24.823s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgsConfig.cmake
+[24.823s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/cmake/system_msgsConfig-version.cmake
+[24.824s] -- Installing: /home/nagi/ros2_ws/install/system_msgs/share/system_msgs/package.xml
+[24.826s] Invoked command in '/home/nagi/ros2_ws/build/system_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy /usr/bin/cmake --install /home/nagi/ros2_ws/build/system_msgs

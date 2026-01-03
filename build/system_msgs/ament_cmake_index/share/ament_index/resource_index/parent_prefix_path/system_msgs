@@ -1,1 +1,1 @@
-/home/nagi/ros2_ws/install/system_msgs:/home/nagi/ros2_ws/install/person_msgs:/home/nagi/ros2_ws/install/mypkg:/opt/ros/jazzy
+/home/nagi/ros2_ws/install/mypkg:/home/nagi/ros2_ws/install/system_msgs:/opt/ros/jazzy
