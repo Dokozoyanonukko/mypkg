@@ -1,9 +1,0 @@
-{
-  "package_name": "system_msgs",
-  "non_idl_tuples": [
-    "/home/nagi/ros2_ws/src/system_msgs:msg/RmEvent.msg",
-    "/home/nagi/ros2_ws/src/system_msgs:msg/RmNotioncmd.msg",
-    "/home/nagi/ros2_ws/src/system_msgs:msg/RmStatus.msg",
-    "/home/nagi/ros2_ws/src/system_msgs:msg/Response.msg"
-  ]
-}
