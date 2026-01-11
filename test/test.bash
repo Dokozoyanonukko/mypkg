@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 set -e
-#source /opt/ros/jazzy/setup.bash
+source /opt/ros/jazzy/setup.bash
 
 dir=~
 [ "$1" != "" ] && dir="$1"

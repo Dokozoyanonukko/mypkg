@@ -4,7 +4,7 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-24.04
-    container: ryuichiueda/ubuntu22.04-ros2:latest
+    container: ros:jazzy-ros-base
 
     strategy:
       matrix:
@@ -24,4 +24,5 @@ jobs:
           git clone https://github.com/Dokozoyanonukko/system_msgs.git
 
           cd /root/ros2_ws
+          source /opt/ros/jazzy/setup.bash
           bash -xv ./src/mypkg/test/test.bash /root
