@@ -3,10 +3,18 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 set -e
-source /opt/ros/jazzy/setup.bash
+
+if [ -f /opt/ros/jazzy/setup.bash ]; then
+  source /opt/ros/jazzy/setup.bash
+fi
 
 dir=~
 [ "$1" != "" ] && dir="$1"
+
+cd $dir/ros2_ws/src
+if [ ! -d system_msgs ]; then
+  git clone https://github.com/Dokozoyanonukko/system_msgs.git
+fi
 
 cd $dir/ros2_ws
 colcon build
