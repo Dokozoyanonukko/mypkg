@@ -4,8 +4,13 @@
 
 set -e
 
-if [ -f /opt/ros/jazzy/setup.bash ]; then
+if [ -f /opt/ros/humble/setup.bash ]; then
+  source /opt/ros/humble/setup.bash
+elif [ -f /opt/ros/jazzy/setup.bash ]; then
   source /opt/ros/jazzy/setup.bash
+else
+  echo "ROS 2 setup.bash not found"
+  exit 1
 fi
 
 dir=~
