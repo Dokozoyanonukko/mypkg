@@ -35,7 +35,7 @@
 リポジトリをコピーしたいディレクトリにて以下の操作を行ってください。
 また、本パッケージを利用するためには別パッケージの**system_msgs**をクローンする必要があります。本パッケージで使用するメッセージ型が定義されています。
 
-* system_msgsについてはこちらをご覧ください。
+* system_msgsについてはこちらをご覧ください。  
 https://github.com/Dokozoyanonukko/system_msgs
 
 ```bash
