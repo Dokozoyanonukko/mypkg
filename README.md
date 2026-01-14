@@ -32,7 +32,7 @@
 | `status.py` | Subscribe<br/>Publish | `/reminder_command`<br/>**`/reminder_status`** | `system_msgs/msg/RmNotioncmd`<br/>**`system_msgs/msg/RmStatus`** | <br/>ステータス|
 
 # 使い方
-任意のROS2ワークスペース直下の`src`にて以下の操作を行ってください。
+本パッケージをクローンしたいディレクトリにて以下の操作を行ってください。
 また、本パッケージを利用するためには別パッケージの**system_msgs**をクローンする必要があります。本パッケージで使用するメッセージ型が定義されています。
 
 * system_msgsについてはこちらをご覧ください。  
@@ -41,7 +41,6 @@ https://github.com/Dokozoyanonukko/system_msgs
 ```bash
 $ git clone git@github.com:Dokozoyanonukko/mypkg.git
 $ git clone git@github.com:Dokozoyanonukko/system_msgs.git #外部リポジトリの依存パッケージをクローン
-$ cd ..
 $ colcon build
 $ source install/setup.bash
 $ ros2 launch mypkg medicine_rm.launch.py
